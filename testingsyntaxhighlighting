@@ -1,0 +1,44 @@
+``# TestingSyntax
+
+# Trying Code Coloring
+1. Create Fenced Code Block First
+>>>Standard Markdown is done by surrounding text with with 4 spaces at beginning of each line
+>>>Fenced Code in GFM is ``` code ```
+>>>>>>Although fenced code blocks don't have to be preceded by a blank line like indented code blocks do, it's recommended
+>>>>>>Remember within lists, you have to indent non-fenced code blocks eight spaces to render them properly
+
+## Example
+
+```java
+/* HelloWorld.java
+ */
+public class HelloWorld
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+}
+```
+
+    ```java
+	```public class HelloWorld
+	```{public static void main(String[] args) {
+		```System.out.printIn("Hello World!");}
+	```}
+	```
+
+
+2. Fenced Code can then add syntax highlighting
+>>>In the Fenced Block, add an optional language identifier to run it through syntax highlighting
+>>>>>>They use "Linguist" to perform language detection & syntax highlighting
+
+## Example:
+
+```java
+public class HelloWorld
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+}
+```
